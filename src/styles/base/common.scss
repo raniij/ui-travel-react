@@ -1,0 +1,18 @@
+@use '../abstracts/variables.scss' as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontPretendard;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: $black;
+  background: #fff;
+}
+
+a,
+button {
+  cursor: pointer;
+}
