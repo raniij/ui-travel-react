@@ -1,0 +1,64 @@
+@use '../../../styles/abstracts/variables' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+$imgPath: '../../../assets/images/common';
+
+.mobileHeader {
+  display: none;
+
+  &Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1rem;
+    background-color: $white;
+  }
+}
+
+.mobileLogo {
+  overflow: hidden;
+  width: 8rem;
+
+  a,
+  img {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    transform: scale(1.4);
+  }
+}
+
+.mobileUtil {
+  display: flex;
+  align-items: center;
+
+  .mobileSearchBtn,
+  .mobileMenuBtn {
+    width: 4.4rem;
+    height: 4.4rem;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-indent: -999rem;
+  }
+
+  .mobileSearchBtn {
+    background-image: url('#{$imgPath}/icon_search.svg');
+  }
+
+  .mobileMenuBtn {
+    background-image: url('#{$imgPath}/icon_hamburger.svg');
+  }
+}
+
+// 반응형
+@media (max-width: $maxTablet) {
+  .mobileHeader {
+    display: block;
+  }
+}

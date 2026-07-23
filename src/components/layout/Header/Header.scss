@@ -4,6 +4,7 @@
 $imgPath: '../../../assets/images/common';
 
 .travelHeader {
+  background-color: $white;
   border-bottom: .1rem solid rgba($black, .08);
 
   .bannerAD {
@@ -129,7 +130,7 @@ $imgPath: '../../../assets/images/common';
       right: 1.6rem;
       width: 2rem;
       height: 2rem;
-      background: url('#{$imgPath}/btn_search.svg') 0 0 / 100% auto no-repeat;
+      background: url("#{$imgPath}/icon_search.svg") 0 0 / 100% auto no-repeat;
       text-indent: -9999rem;
     }
 
@@ -219,5 +220,12 @@ $imgPath: '../../../assets/images/common';
         object-fit: cover;
       }
     }
+  }
+}
+
+// 반응형
+@media (max-width: $maxTablet) {
+  .travelHeader {
+    display: none;
   }
 }
