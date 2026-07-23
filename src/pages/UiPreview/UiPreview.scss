@@ -1,5 +1,7 @@
 @use '../../styles/abstracts/variables' as *;
 
+$primary: #8b9dff;
+
 .uiPreview {
   min-width: $minWidth;
   min-height: 100vh;
@@ -89,8 +91,14 @@
         }
 
         &:hover {
-          border-color: $black;
+          background: rgba($primary, .06);
+          border-color: $primary;
+          color: $primary;
           transform: translateX(.4rem);
+
+          &::after {
+            color: $primary;
+          }
         }
       }
     }

@@ -1,0 +1,223 @@
+@use '../../../styles/abstracts/variables' as *;
+@use '../../../styles/abstracts/mixins.scss' as *;
+
+$imgPath: '../../../assets/images/common';
+
+.travelHeader {
+  border-bottom: .1rem solid rgba($black, .08);
+
+  .bannerAD {
+    margin-left: auto;
+  }
+
+  // Navigation
+  .navigation {
+    &Inner {
+      display: flex;
+      align-items: center;
+      width: 128rem;
+      height: 5rem;
+      margin: 0 auto;
+    }
+
+    &List {
+      display: flex;
+
+      li {
+        padding: 0 1.2rem;
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+
+      a {
+        display: block;
+        position: relative;
+        height: 5rem;
+        color: $black;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 5rem;
+
+
+        &:hover::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: .5rem;
+          left: 0;
+          height: .2rem;
+          background-color: $black;
+        }
+      }
+    }
+  }
+
+  .seasonMenu {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-block;
+      height: 5rem;
+      padding: 0 .2rem;
+      line-height: 5rem;
+      color: $blue500;
+      font-size: 1.6rem;
+      font-weight: bold;
+
+      &:not(:first-child) {
+        margin-left: 2.4rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: .1rem;
+      height: 1.7rem;
+      margin: 0 2.2rem 0 1.2rem;
+      background-color: #ddd;
+    }
+  }
+}
+
+.header {
+  &Inner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.2rem;
+    width: 128rem;
+    height: 10rem;
+  }
+
+  &Logo {
+    .logoBtn {
+      display: block;
+      width: 19.5rem;
+      height: 3.8rem;
+      text-indent: -999rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // 검색창
+  &Search {
+    width: 45.2rem;
+    margin-left: 2rem;
+
+    .searchForm {
+      position: relative;
+      width: 100%;
+      height: 5rem;
+      padding-right: 4.5rem;
+      background: $white;
+      border: .1rem solid rgba($black, .15);
+      border-radius: 2.5rem;
+    }
+
+    .searchBtn {
+      position: absolute;
+      top: 1.4rem;
+      right: 1.6rem;
+      width: 2rem;
+      height: 2rem;
+      background: url('#{$imgPath}/btn_search.svg') 0 0 / 100% auto no-repeat;
+      text-indent: -9999rem;
+    }
+
+    .searchAD {
+      @include lineClamp(1);
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      width: calc(100% - 6.5rem);
+      color: $black;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      transform: translateY(-50%);
+    }
+
+    .searchInput {
+      display: none;
+    }
+
+    // 검색창 활성화
+    &.active {
+      .searchInput {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-left: 2rem;
+        color: $black;
+        font-size: 1.7rem;
+        font-weight: bold;
+        outline: 0;
+
+        &::placeholder {
+          color: #999;
+          font-size: 1.5rem;
+          font-weight: normal;
+        }
+      }
+
+      .searchAD {
+        display: none;
+      }
+    }
+  }
+
+  // Util
+  &Util {
+    margin-left: auto;
+
+    .utilMenu {
+      display: flex;
+
+      li {
+        a {
+          color: $black;
+          font-size: 1.5rem;
+        }
+
+        &:not(:first-child) {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  // Banner
+  &Banner {
+    width: 18rem;
+    height: 5rem;
+    overflow: hidden;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

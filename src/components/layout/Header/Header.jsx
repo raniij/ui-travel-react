@@ -1,0 +1,98 @@
+import HeaderBanner from './HeaderBanner'
+import { Link } from 'react-router-dom'
+import logo from '../../../assets/images/common/logo.png'
+import './Header.scss'
+
+const utilMenus = [
+  '로그인',
+  '회원가입',
+  '마이페이지',
+  '예약확인/취소',
+]
+
+const navigationMenus = [
+  '항공',
+  '국내숙소',
+  '해외숙소',
+  '투어·티켓',
+  '해외패키지',
+  '국내/제주도',
+  '허니문',
+  '골프',
+]
+
+const seasonMenus = [
+  '여행혜택존',
+  '1등특가',
+  '쎈항공딜',
+]
+
+const Header = () => {
+  return (
+    <header className="travelHeader">
+      <div className="headerWrapper">
+        <div className="headerInner">
+          <h1 className="headerLogo">
+            <Link 
+              to="/travel/main"
+              className="logoBtn"
+            >
+              <img src={logo} alt="travel" />
+            </Link>
+          </h1>
+
+          <div className="headerSearch">{/* 활성화시 .active 추가 */}
+            <div className="searchForm">
+              <input 
+                type="search"
+                className="searchInput" 
+                placeholder="여행할 도시나 상품을 검색해 보세요."
+              />
+              <button className="searchBtn">검색</button>
+              <span className="searchAD">그랜드 하얏트 제주 룸 업그레이드!</span>
+            </div>
+            {/* searchFild div */}
+          </div>
+
+          <div className="headerUtil">
+            <ul className="utilMenu">
+              {
+                utilMenus.map(item => (
+                  <li key={item}><Link to=".">{item}</Link></li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+
+        <nav className="navigationWrapper">
+          <div className="navigationInner">
+            <div className="navigation">
+              <ul className="navigationList">
+                {
+                  navigationMenus.map(item => (
+                    <li key={item}><Link to=".">{item}</Link></li>
+                  ))
+                }
+              </ul>
+            </div>
+
+            <div className="seasonMenu">
+              {
+                seasonMenus.map(item => (
+                  <Link key={item} to=".">{item}</Link>
+                ))
+              }
+            </div>
+
+            <div className="bannerAD">
+              <HeaderBanner />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  )
+}
+
+export default Header
