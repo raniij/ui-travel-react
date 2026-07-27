@@ -1,18 +1,11 @@
-import Header from '../../components/layout/Header/Header'
-import Footer from '../../components/layout/Footer/Footer'
+import Layout from '../../components/layout/Layout'
 import './Main.scss'
 
 const Main = () => {
   return (
-    <>
-      <Header />
-
-      <main>
-        <h1>main</h1>
-      </main>
-
-      <Footer />
-    </>
+    <Layout>
+      <h1>메인</h1>
+    </Layout>
   )
 }
 
