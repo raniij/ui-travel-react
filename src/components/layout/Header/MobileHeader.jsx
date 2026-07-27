@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
+
 import logo from '../../../assets/images/common/logo.png'
+
 import './MobileHeader.scss'
 
 const MobileHeader = () => {

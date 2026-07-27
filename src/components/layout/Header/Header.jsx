@@ -1,34 +1,72 @@
+import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import HeaderBanner from './HeaderBanner'
 import MobileHeader from './MobileHeader'
-import { Link } from 'react-router-dom'
+import SearchLayer from './SearchLayer'
+
 import logo from '../../../assets/images/common/logo.png'
+
 import './Header.scss'
 
 const utilMenus = [
-  '로그인',
-  '회원가입',
-  '마이페이지',
-  '예약확인/취소',
+  "로그인",
+  "회원가입",
+  "마이페이지",
+  "예약확인/취소",
 ]
 
 const navigationMenus = [
-  '항공',
-  '국내숙소',
-  '해외숙소',
-  '투어·티켓',
-  '해외패키지',
-  '국내/제주도',
-  '허니문',
-  '골프',
+  "항공",
+  "국내숙소",
+  "해외숙소",
+  "투어·티켓",
+  "해외패키지",
+  "국내/제주도",
+  "허니문",
+  "골프",
 ]
 
 const seasonMenus = [
-  '여행혜택존',
-  '1등특가',
-  '쎈항공딜',
+  "여행혜택존",
+  "1등특가",
+  "쎈항공딜",
 ]
 
 const Header = () => {
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
+
+  const searchRef = useRef(null)
+  const searchInputRef = useRef(null)
+
+  const handleSearchOpen = () => {
+    setIsSearchOpen(true)
+  }
+
+  // 검색창 클릭시 input 포커스
+  useEffect(() => {
+    if (isSearchOpen && searchInputRef.current) {
+      searchInputRef.current.focus()
+    }
+  }, [isSearchOpen])
+
+  // 검색 레이어 닫기
+  useEffect(() => {
+    const handleClickOutside = e => {
+      if (!searchRef.current) return
+
+      if (!searchRef.current.contains(e.target)) {
+        setIsSearchOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [])
+
   return (
     <>
       <header className="travelHeader pcHeader">
@@ -43,17 +81,28 @@ const Header = () => {
               </Link>
             </h1>
 
-            <div className="headerSearch">{/* 활성화시 .active 추가 */}
-              <div className="searchForm">
+            <div 
+              ref={searchRef}            
+              className={`headerSearch ${isSearchOpen ? 'active' : ''}`}
+            >
+              <div 
+                className="searchForm"
+                onClick={handleSearchOpen}
+              >
                 <input 
+                  ref={searchInputRef}
                   type="search"
                   className="searchInput" 
                   placeholder="여행할 도시나 상품을 검색해 보세요."
                 />
-                <button className="searchBtn">검색</button>
-                <span className="searchAD">그랜드 하얏트 제주 룸 업그레이드!</span>
+                <button type="button" className="searchBtn">검색</button>
+
+                {!isSearchOpen && (
+                  <span className="searchAD">그랜드 하얏트 제주 룸 업그레이드!</span>
+                )}
               </div>
-              {/* searchFild div */}
+
+              {isSearchOpen && <SearchLayer />}
             </div>
 
             <div className="headerUtil">

@@ -79,7 +79,7 @@ $imgPath: '../../../assets/images/common';
       width: .1rem;
       height: 1.7rem;
       margin: 0 2.2rem 0 1.2rem;
-      background-color: #ddd;
+      background-color: $gray300;
     }
   }
 }
@@ -111,17 +111,21 @@ $imgPath: '../../../assets/images/common';
 
   // 검색창
   &Search {
+    position: relative;
+    z-index: 90;
     width: 45.2rem;
     margin-left: 2rem;
 
     .searchForm {
       position: relative;
+      overflow: hidden;
       width: 100%;
       height: 5rem;
       padding-right: 4.5rem;
       background: $white;
       border: .1rem solid rgba($black, .15);
       border-radius: 2.5rem;
+      box-sizing: border-box;
     }
 
     .searchBtn {
@@ -144,6 +148,7 @@ $imgPath: '../../../assets/images/common';
       font-size: 1.5rem;
       line-height: 1.8rem;
       transform: translateY(-50%);
+      pointer-events: none;
     }
 
     .searchInput {
@@ -152,25 +157,41 @@ $imgPath: '../../../assets/images/common';
 
     // 검색창 활성화
     &.active {
+      overflow: hidden;
+      align-self: flex-start;
+      height: auto;
+      margin-top: 1.7rem;
+      background: #fff;
+      border-radius: 2rem;
+      box-shadow: 0 .3rem 1rem 0 rgba($black, .1);
+
+      .searchForm {
+        height: 5.5rem;
+        border: 0;
+        border-bottom: .1rem solid $gray300;
+        border-radius: 0;
+      }
+
       .searchInput {
         display: block;
         width: 100%;
         height: 100%;
         padding-left: 2rem;
+        border: 0;
         color: $black;
         font-size: 1.7rem;
         font-weight: bold;
         outline: 0;
 
         &::placeholder {
-          color: #999;
+          color: $gray500;
           font-size: 1.5rem;
           font-weight: normal;
         }
       }
 
-      .searchAD {
-        display: none;
+      .searchBtn {
+        top: 1.7rem;
       }
     }
   }
@@ -224,8 +245,8 @@ $imgPath: '../../../assets/images/common';
 }
 
 // 반응형
-@media (max-width: $maxTablet) {
-  .travelHeader {
+@media (max-width: $minDesktop) {
+  .pcHeader {
     display: none;
   }
 }
