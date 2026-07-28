@@ -6,7 +6,8 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Header />
 
-      <main className="pageContent">
+      <main className="pageContent"
+      style={{ height: 500 }}>
         {children}
       </main>
 

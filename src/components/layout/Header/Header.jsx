@@ -69,6 +69,7 @@ const Header = () => {
 
   return (
     <>
+      {/* PC Header */}
       <header className="travelHeader pcHeader">
         <div className="headerWrapper">
           <div className="headerInner">
@@ -144,6 +145,7 @@ const Header = () => {
         </div>
       </header>
 
+      {/* Mobile Header */}
       <MobileHeader />
     </>
   )

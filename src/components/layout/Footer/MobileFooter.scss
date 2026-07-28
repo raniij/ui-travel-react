@@ -1,0 +1,109 @@
+@use '../../../styles/abstracts/variables' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+$imgPath: '../../../assets/images/common';
+
+.mobileFooter {
+  display: none;
+
+  .footer {
+    &Inner {
+      margin: 0;
+      padding: 3rem 0 10rem;
+      text-align: center;
+      color: rgba(17, 17, 17, .5);
+      font-size: 1.1rem;
+      background-color: #fafafa;
+    }
+
+    &Info {
+      margin-top: 1.4rem;
+
+      .btnCompany {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        color: #333;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+
+        &::after {
+          content: "";
+          width: 1rem;
+          height: 1.1rem;
+          margin: 0 0 0 .2rem;
+          background: url("#{$imgPath}/footer_arrow.svg") 50% 50% no-repeat;
+        }
+
+        &[aria-expanded='true']::after {
+          transform: rotateX(180deg);
+        }
+  
+        strong {
+          padding-right: .4rem;
+          color: $black;
+          font-weight: bold;
+        }
+      }
+
+      .infoContent {
+        width: 26rem;
+        margin: 0 auto;
+        padding-top: 1rem;
+        text-align: left;
+
+        p {
+          line-height: 1.7rem;
+        }
+      }
+
+      .linkText {
+        margin-left: .3rem;
+        color: #333;
+        text-decoration: underline;
+      }
+    }
+
+    &Notice {
+      margin: 1.6rem auto 0;
+      padding: 0 2rem;
+    }
+  }
+
+  .menuList {
+    &:not(:first-child) {
+      margin-top: .2rem;
+    }
+
+    li {
+      display: inline-block;
+
+      &:not(:first-child)::before {
+        content: "";
+        display: inline-block;
+        width: .1rem;
+        height: 1rem;
+        margin: 0 .6rem;
+        background: rgba(17, 17, 17, .5);
+      }
+    }
+
+    a {
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+
+      &.bold {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// 반응형
+@media (max-width: $minDesktop) {
+  .mobileFooter {
+    display: block;
+  }
+}
