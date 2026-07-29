@@ -20,9 +20,7 @@ $imgPath: '../../../assets/images/common';
       margin-top: 1.4rem;
 
       .btnCompany {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
         margin: 0 auto;
         color: #333;
         font-size: 1.1rem;

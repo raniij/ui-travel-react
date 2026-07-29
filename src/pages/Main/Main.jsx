@@ -1,10 +1,51 @@
 import Layout from '../../components/layout/Layout'
+import CategoryMenu from './components/CategoryMenu'
+import MainBanner from './components/MainBanner'
+import UserTicket from './components/UserTicket'
+import SpecialPrice from './components/SpecialPrice'
+import SubCategory from './components/SubCategory'
+import SesesePromotion from './components/SesesePromotion'
+import AdBanner from './components/AdBanner'
+import TravelDiscovery from './components/TravelDiscovery'
+import TravelLive from './components/TravelLive'
+import UsefulInfo from './components/UsefulInfo'
+import Notice from './components/Notice'
+
 import './Main.scss'
 
 const Main = () => {
   return (
     <Layout>
-      <h1>메인</h1>
+      <main className="travelMain"
+        style={{
+          height: 1000
+        }}
+      >
+        <h2 className="blind">투어 메인</h2>
+        {/* 카테고리 메뉴 (모바일) :: categoryMenu */}
+        {/* 메인배너 :: mainBanner */}
+        {/* 예매티켓 & 배너 :: userTicket */}
+        {/* 투어특가 :: specialPrice */}
+        {/* 전략메뉴 :: subCategory */}
+        {/* 쎼쎼쎼 할인특가 :: sesesePromotion */}
+        {/* 광고배너 :: adBanner */}
+        {/* 여행의 발견 :: travelDiscovery */}
+        {/* 여행 LIVE :: travelLive */}
+        {/* 유용한 정보 :: usefulInfo */}
+        {/* 공지사항 :: notice */}
+
+        <CategoryMenu />
+        <MainBanner />
+        <UserTicket />
+        <SpecialPrice />
+        <SubCategory />
+        <SesesePromotion />
+        <AdBanner />
+        <TravelDiscovery />
+        <TravelLive />
+        <UsefulInfo />
+        <Notice />
+      </main>
     </Layout>
   )
 }
