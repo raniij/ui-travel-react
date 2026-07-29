@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 import './MobileFooter.scss'
 
 const moFooterMenus = [
-  { text: "이용약관" },
-  { text: "개인정보 처리 방침", isBold: true },
-  { text: "위치기반서비스 이용약관" },
-  { text: "분쟁해결기준" },
-  { text: "여행약관" },
-  { text: "여행자보험 가입안내" },
-  { text: "공지사항" },
-  { text: "로그아웃" },
+  { text: '이용약관' },
+  { text: '개인정보 처리 방침', isBold: true },
+  { text: '위치기반서비스 이용약관' },
+  { text: '분쟁해결기준' },
+  { text: '여행약관' },
+  { text: '여행자보험 가입안내' },
+  { text: '공지사항' },
+  { text: '로그아웃' },
 ]
 
 const MobileFooter = () => {

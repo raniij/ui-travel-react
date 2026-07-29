@@ -17,17 +17,17 @@ import iconMore from '../../../assets/images/main/icon_more.svg'
 import './CategoryMenu.scss'
 
 const categoryMenus = [
-  { text: "항공", icon: iconAir },
-  { text: "국내숙소", icon: iconHotel },
-  { text: "해외숙소", icon: iconOverseahotel },
-  { text: "패키지여행", icon: iconPackage },
-  { text: "투어·티켓", icon: iconActivity },
-  { text: "TOP여행지", icon: iconTop },
-  { text: "여행혜택존", icon: iconBenefit },
-  { text: "제주도", icon: iconJeju },
-  { text: "1등 특가", icon: iconTrophy },
-  { text: "숙박페스타", icon: iconMap },
-  { text: "더보기", icon: iconMore, more: true }
+  { text: '항공', icon: iconAir },
+  { text: '국내숙소', icon: iconHotel },
+  { text: '해외숙소', icon: iconOverseahotel },
+  { text: '패키지여행', icon: iconPackage },
+  { text: '투어·티켓', icon: iconActivity },
+  { text: 'TOP여행지', icon: iconTop },
+  { text: '여행혜택존', icon: iconBenefit },
+  { text: '제주도', icon: iconJeju },
+  { text: '1등 특가', icon: iconTrophy },
+  { text: '숙박페스타', icon: iconMap },
+  { text: '더보기', icon: iconMore, more: true }
 ]
 
 const CategoryMenu = () => {

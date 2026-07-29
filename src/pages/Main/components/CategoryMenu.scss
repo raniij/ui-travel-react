@@ -107,13 +107,13 @@ $imgPath: '../../../assets/images/main';
       width: 3.6rem;
       height: 3.6rem;
       margin-top: 1.6rem;
-      background: url("#{$imgPath}/icon_close.svg") 50% 50% no-repeat;
+      background: url('#{$imgPath}/icon_close.svg') 50% 50% no-repeat;
       font-size: 0;
       transform: translateX(-50%);
     }
 
     &::before {
-      content: "";
+      content: '';
       position: fixed;
       top: 0;
       right: 0;

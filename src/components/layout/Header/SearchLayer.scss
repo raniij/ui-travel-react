@@ -136,7 +136,7 @@ $imgPath: '../../../assets/images/common';
 
           @each $icon in $icons {
             &.#{$icon} {
-              background-image: url("#{$imgPath}/icon_rank_#{$icon}.png");
+              background-image: url('#{$imgPath}/icon_rank_#{$icon}.png');
             }
           }
 
@@ -149,7 +149,7 @@ $imgPath: '../../../assets/images/common';
             background: none;
 
             &::before {
-              content: "";
+              content: '';
               display: block;
               width: 1rem;
               height: .1rem;

@@ -3,95 +3,95 @@ import { Link } from 'react-router-dom'
 import './SearchLayer.scss'
 
 const recentKeywords = [
-  "제주도",
-  "힐튼호텔",
-  "곤지암",
-  "여수",
-  "강릉",
-  "사이판",
-  "괌",
-  "이탈리아 패키지 여행",
-  "국내리조트",
+  '제주도',
+  '힐튼호텔',
+  '곤지암',
+  '여수',
+  '강릉',
+  '사이판',
+  '괌',
+  '이탈리아 패키지 여행',
+  '국내리조트',
 ]
 
 const popularKeywords = [
   {
-    keyword: "괌",
+    keyword: '괌',
     state: {
-      text: "상승",
-      type: "up",
+      text: '상승',
+      type: 'up',
     },
     rank: 3,
   },
   {
-    keyword: "여수",
+    keyword: '여수',
     state: {
-      text: "변동없음",
-      type: "keep",
+      text: '변동없음',
+      type: 'keep',
     },
     rank: null,
   },
   {
-    keyword: "다낭",
+    keyword: '다낭',
     state: {
-      text: "하락",
-      type: "down",
+      text: '하락',
+      type: 'down',
     },
     rank: 1,
   },
   {
-    keyword: "이탈리아 패키지 여행",
+    keyword: '이탈리아 패키지 여행',
     state: {
-      text: "상승",
-      type: "up",
+      text: '상승',
+      type: 'up',
     },
     rank: 2,
   },
   {
-    keyword: "강릉",
+    keyword: '강릉',
     state: {
-      text: "NEW",
-      type: "new",
+      text: 'NEW',
+      type: 'new',
     },
     rank: null,
   },
   {
-    keyword: "스위스",
+    keyword: '스위스',
     state: {
-      text: "상승",
-      type: "up",
+      text: '상승',
+      type: 'up',
     },
     rank: 1,
   },
   {
-    keyword: "사이판",
+    keyword: '사이판',
     state: {
-      text: "상승",
-      type: "up",
+      text: '상승',
+      type: 'up',
     },
     rank: 3,
   },
   {
-    keyword: "곤지암",
+    keyword: '곤지암',
     state: {
-      text: "하락",
-      type: "down",
+      text: '하락',
+      type: 'down',
     },
     rank: 2,
   },
   {
-    keyword: "오크밸리",
+    keyword: '오크밸리',
     state: {
-      text: "상승",
-      type: "up",
+      text: '상승',
+      type: 'up',
     },
     rank: 4,
   },
   {
-    keyword: "안동",
+    keyword: '안동',
     state: {
-      text: "하락",
-      type: "down",
+      text: '하락',
+      type: 'down',
     },
     rank: 3,
   },

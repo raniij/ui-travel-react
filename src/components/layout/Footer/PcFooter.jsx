@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 import './PcFooter.scss'
 
 const pcFooterMenus = [
-  { text: "회사소개" },
-  { text: "이용약관" },
-  { text: "개인정보처리방침", isBold: true },
-  { text: "위치기반서비스 이용약관" },
-  { text: "여행약관" },
-  { text: "여행자보험 가입내역" },
-  { text: "티켓판매안내" },
-  { text: "공지사항" },
-  { text: "고객센터" },
-  { text: "Language" },
+  { text: '회사소개' },
+  { text: '이용약관' },
+  { text: '개인정보처리방침', isBold: true },
+  { text: '위치기반서비스 이용약관' },
+  { text: '여행약관' },
+  { text: '여행자보험 가입내역' },
+  { text: '티켓판매안내' },
+  { text: '공지사항' },
+  { text: '고객센터' },
+  { text: 'Language' },
 ]
 
 const PcFooter = () => {

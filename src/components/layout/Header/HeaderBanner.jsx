@@ -13,15 +13,15 @@ import './PcHeader.scss'
 const banners = [
   {
     image: banner01,
-    alt: "국내여행 특가 모음"
+    alt: '국내여행 특가 모음'
   },
   {
     image: banner02,
-    alt: "해외여행 초특가 기획전"
+    alt: '해외여행 초특가 기획전'
   },
   {
     image: banner03,
-    alt: "해외여행 인기 BEST"
+    alt: '해외여행 인기 BEST'
   },
 ]
 

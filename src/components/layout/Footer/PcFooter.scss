@@ -85,7 +85,7 @@ $imgPath: '../../../assets/images/common';
       }
 
       &:not(:first-child)::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 1.2rem;
         left: .1rem;

@@ -43,7 +43,7 @@ $imgPath: '../../../assets/images/common';
 
 
         &:hover::after {
-          content: "";
+          content: '';
           position: absolute;
           right: 0;
           bottom: .5rem;
@@ -74,7 +74,7 @@ $imgPath: '../../../assets/images/common';
     }
 
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       width: .1rem;
       height: 1.7rem;
@@ -132,7 +132,7 @@ $imgPath: '../../../assets/images/common';
       right: 1.6rem;
       width: 2rem;
       height: 2rem;
-      background: url("#{$imgPath}/icon_search.svg") 0 0 / 100% auto no-repeat;
+      background: url('#{$imgPath}/icon_search.svg') 0 0 / 100% auto no-repeat;
       text-indent: -9999rem;
     }
 

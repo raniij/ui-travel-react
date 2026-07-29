@@ -27,11 +27,11 @@ $imgPath: '../../../assets/images/common';
         line-height: 1.7rem;
 
         &::after {
-          content: "";
+          content: '';
           width: 1rem;
           height: 1.1rem;
           margin: 0 0 0 .2rem;
-          background: url("#{$imgPath}/footer_arrow.svg") 50% 50% no-repeat;
+          background: url('#{$imgPath}/footer_arrow.svg') 50% 50% no-repeat;
         }
 
         &[aria-expanded='true']::after {
@@ -78,7 +78,7 @@ $imgPath: '../../../assets/images/common';
       display: inline-block;
 
       &:not(:first-child)::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: .1rem;
         height: 1rem;
