@@ -8,7 +8,7 @@ import banner03 from '../../../assets/images/common/banner03.png'
 
 import 'swiper/css'
 import 'swiper/css/effect-fade'
-import './Header.scss'
+import './PcHeader.scss'
 
 const banners = [
   {
@@ -38,15 +38,13 @@ const HeaderBanner = () => {
           disableOnInteraction: false,
         }}
       >
-        {
-          banners.map(({ image, alt }, index) => (
-            <SwiperSlide key={index}>
-              <Link to="/">
-                <img src={image} alt={alt} />
-              </Link>
-            </SwiperSlide>
-          ))
-        }
+        {banners.map(({ image, alt }, index) => (
+          <SwiperSlide key={index}>
+            <Link to="/">
+              <img src={image} alt={alt} />
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   )

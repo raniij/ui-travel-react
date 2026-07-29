@@ -113,13 +113,11 @@ const SearchLayer = () => {
             </button>
           </div>
           <ul className="recentList">
-            {
-              recentKeywords.map(item => (
-                <li key={item}>
-                  <Link to="." className="keyword">{item}</Link>
-                </li>
-              ))
-            }
+            {recentKeywords.map(item => (
+              <li key={item}>
+                <Link to="." className="keyword">{item}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -130,21 +128,19 @@ const SearchLayer = () => {
             <span className="baseDate">2022.08.30 14:00 기준</span>
           </div>
           <ol className="popularList">
-            {
-              popularKeywords.map(item => (
-                <li key={item.keyword}>
-                  <Link to="." className="keyword">{item.keyword}</Link>
-                  <span className="state">
-                    <i className={`rank ${item.state.type}`}>
-                      {item.state.text}
-                    </i>
-                    {item.rank !== null && (
-                      <span>{item.rank}</span>
-                    )}
-                  </span>
-                </li>
-              ))
-            }
+            {popularKeywords.map(item => (
+              <li key={item.keyword}>
+                <Link to="." className="keyword">{item.keyword}</Link>
+                <span className="state">
+                  <i className={`rank ${item.state.type}`}>
+                    {item.state.text}
+                  </i>
+                  {item.rank !== null && (
+                    <span>{item.rank}</span>
+                  )}
+                </span>
+              </li>
+            ))}
           </ol>
         </div>
       </div>
