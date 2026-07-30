@@ -77,6 +77,10 @@ $imgPath: '../../../assets/images/main';
         display: block;
       }
     }
+
+    ~ .mainBanner {
+      margin-top: 18rem;
+    }
   }
 
   &.fixed.active {
