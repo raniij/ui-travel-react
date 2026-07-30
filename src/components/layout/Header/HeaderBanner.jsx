@@ -40,7 +40,7 @@ const HeaderBanner = () => {
       >
         {banners.map(({ image, alt }, index) => (
           <SwiperSlide key={index}>
-            <Link to="/">
+            <Link to=".">
               <img src={image} alt={alt} />
             </Link>
           </SwiperSlide>
