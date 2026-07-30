@@ -4,6 +4,7 @@
 $imgPath: '../../../assets/images/common';
 
 .travelHeader {
+  display: none;
   background-color: $white;
   border-bottom: .1rem solid rgba($black, .08);
 
@@ -239,9 +240,13 @@ $imgPath: '../../../assets/images/common';
   }
 }
 
-// 반응형
-@media (max-width: $minDesktop) {
+// PC
+@media (min-width: $minDesktop) {
   .pcHeader {
+    display: block;
+  }
+
+  .mobileHeader {
     display: none;
   }
 }

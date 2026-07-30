@@ -3,57 +3,56 @@
 
 $imgPath: '../../../assets/images/main';
 
-// PC
 .mainBanner {
-  padding: 4rem 0 5rem;
 
-  .banner {
-    position: relative;
-  }
-
-  .swiper-slide {
-    overflow: hidden;
-    border-radius: 1.6rem;
-  }
-
-  .btnPrev,
-  .btnNext {
-    @include flexCenter;
-    position: absolute;
-    top: 50%;
-    left: -2.4rem;
-    z-index: 1;
-    width: 4.8rem;
-    height: 4.8rem;
-    background: rgba(255, 255, 255, .9);
-    border: .1rem solid rgba(0, 0, 0, .1);
-    box-shadow: 0 0 .8rem rgba(0, 0, 0, .13);
-    border-radius: 50%;
-    font-size: 0;
-    transform: translateY(-50%);
-
-    &::after {
-      content: '';
-      width: 1rem;
-      height: 1.8rem;
-      background: url('#{$imgPath}/slide_arrow.svg') 50% 50% no-repeat;
-    }
-
-    &.btnPrev::after {
-      transform: rotate(180deg);
-    }
-
-    &.btnNext {
-      left: auto;
-      right: -2.4rem;
-    }
-  }
 }
 
-// Mobile & Tablet
-@media (max-width: $minDesktop) {
+// PC
+@media (min-width: $minDesktop) {
   .mainBanner {
-    padding: 2rem 0;
-    border-top: .8rem solid #f0f4f4;
+    padding: 4rem 0 5rem;
+
+    .banner {
+      position: relative;
+    }
+
+    .swiper-slide {
+      overflow: hidden;
+      border-radius: 1.6rem;
+    }
+
+    .btnPrev,
+    .btnNext {
+      @include flexCenter;
+      position: absolute;
+      top: 50%;
+      left: -2.4rem;
+      z-index: 1;
+      width: 4.8rem;
+      height: 4.8rem;
+      background: rgba(255, 255, 255, .9);
+      border: .1rem solid rgba(0, 0, 0, .1);
+      box-shadow: 0 0 .8rem rgba(0, 0, 0, .13);
+      border-radius: 50%;
+      font-size: 0;
+      transform: translateY(-50%);
+
+      &::after {
+        content: '';
+        width: 1rem;
+        height: 1.8rem;
+        background: url('#{$imgPath}/slide_arrow.svg') 50% 50% no-repeat;
+      }
+
+      &.btnPrev::after {
+        transform: rotate(180deg);
+      }
+
+      &.btnNext {
+        left: auto;
+        right: -2.4rem;
+      }
+    }
   }
 }
+

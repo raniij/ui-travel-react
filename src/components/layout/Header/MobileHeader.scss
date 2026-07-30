@@ -4,8 +4,6 @@
 $imgPath: '../../../assets/images/common';
 
 .mobileHeader {
-  display: none;
-
   &Inner {
     display: flex;
     align-items: center;
@@ -54,13 +52,6 @@ $imgPath: '../../../assets/images/common';
 
   .mobileMenuBtn {
     background-image: url('#{$imgPath}/icon_hamburger.svg');
-  }
-}
-
-// 반응형
-@media (max-width: $minDesktop) {
-  .mobileHeader {
-    display: block;
   }
 }
 

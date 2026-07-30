@@ -4,7 +4,6 @@
 $imgPath: '../../../assets/images/main';
 
 .categoryMenu {
-  display: none;
   position: relative;
   background-color: $white;
   box-shadow: 0 .2rem .4rem rgba($black, .06);
@@ -126,9 +125,9 @@ $imgPath: '../../../assets/images/main';
   }
 }
 
-// 반응형
-@media (max-width: $minDesktop) {
+// PC
+@media (min-width: $minDesktop) {
   .categoryMenu {
-    display: block;
+    display: none;
   }
 }

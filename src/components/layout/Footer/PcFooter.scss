@@ -4,6 +4,7 @@
 $imgPath: '../../../assets/images/common';
 
 .travelFooter {
+  display: none;
   min-width: $maxWidth;
   background-color: $white;
   border-top: .1rem solid #e6e6e6;
@@ -106,9 +107,13 @@ $imgPath: '../../../assets/images/common';
   }
 }
 
-// 반응형
-@media (max-width: $minDesktop) {
+// PC
+@media (min-width: $minDesktop) {
   .pcFooter {
+    display: block;
+  }
+
+  .mobileFooter {
     display: none;
   }
 }
