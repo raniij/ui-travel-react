@@ -3,10 +3,8 @@
 
 $imgPath: '../../assets/images/main';
 
+// Mobile & Tablet
 .travelMain {
-  padding: 2rem 0;
-  border-top: .8rem solid #f0f4f4;
-
   section {
     border-bottom: .8rem solid #f0f4f4;
   }
@@ -17,5 +15,9 @@ $imgPath: '../../assets/images/main';
   .travelMain {
     max-width: $maxWidth;
     margin: 0 auto;
+
+    section {
+      border: 0;
+    }
   }
 }
