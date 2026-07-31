@@ -16,11 +16,7 @@ import './Main.scss'
 const Main = () => {
   return (
     <Layout>
-      <main className="travelMain"
-        style={{
-          height: 1000
-        }}
-      >
+      <main className="travelMain">
         <h2 className="blind">투어 메인</h2>
         {/* 카테고리 메뉴 (모바일) :: categoryMenu */}
         {/* 메인배너 :: mainBanner */}
