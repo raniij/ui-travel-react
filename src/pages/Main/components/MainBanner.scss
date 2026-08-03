@@ -19,24 +19,23 @@ $imgPath: '../../../assets/images/main';
 
   .swiper-pagination {
     @include flexCenter;
-  }
 
-  .swiper-pagination-bullet {
-    width: .6rem;
-    height: .6rem;
-    background-color: $white;
-    border: .1rem solid #e5e5e5;
-    opacity: .6;
+    &-bullet {
+      width: .6rem;
+      height: .6rem;
+      background-color: $white;
+      border: .1rem solid #e5e5e5;
+      opacity: .6;
 
-    &-active {
-      width: .8rem;
-      height: .8rem;
-      opacity: 1;
+      &-active {
+        width: .8rem;
+        height: .8rem;
+        opacity: 1;
+      }
     }
   }
 
-  .btnPrev,
-  .btnNext {
+  .swiperBtn {
     display: none;
   }
 }
@@ -72,37 +71,8 @@ $imgPath: '../../../assets/images/main';
       border-radius: 1.6rem;
     }
 
-    .btnPrev,
-    .btnNext {
-      @include flexCenter;
-      position: absolute;
-      top: 50%;
-      left: -2.4rem;
-      z-index: 1;
-      width: 4.8rem;
-      height: 4.8rem;
-      background: rgba($white, .9);
-      border: .1rem solid rgba($black, .1);
-      box-shadow: 0 0 .8rem rgba($black, .13);
-      border-radius: 50%;
-      font-size: 0;
-      transform: translateY(-50%);
-
-      &::after {
-        content: '';
-        width: 1rem;
-        height: 1.8rem;
-        background: url('#{$imgPath}/slide_arrow.svg') 50% 50% no-repeat;
-      }
-
-      &.btnPrev::after {
-        transform: rotate(180deg);
-      }
-
-      &.btnNext {
-        left: auto;
-        right: -2.4rem;
-      }
+    .swiperBtn {
+      display: block;
     }
   }
 }

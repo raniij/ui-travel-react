@@ -35,8 +35,8 @@ const MainBanner = () => {
         <Swiper
           modules={[Navigation, Pagination]}
           navigation={{
-            prevEl: '.btnPrev',
-            nextEl: '.btnNext'
+            prevEl: '.bannerSwiperBtn .btnPrev',
+            nextEl: '.bannerSwiperBtn .btnNext'
           }}
           pagination={{
             clickable: true
@@ -63,8 +63,10 @@ const MainBanner = () => {
           ))}
         </Swiper>
 
-        <button type="button" className="btnPrev">이전</button>
-        <button type="button" className="btnNext">다음</button>
+        <div className="swiperBtn bannerSwiperBtn">
+          <button type="button" className="btnPrev">이전</button>
+          <button type="button" className="btnNext">다음</button>
+        </div>
       </div>
     </section>
   )
