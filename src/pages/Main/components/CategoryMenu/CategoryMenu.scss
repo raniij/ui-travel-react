@@ -1,7 +1,7 @@
-@use '../../../styles/abstracts/variables' as *;
-@use '../../../styles/abstracts/mixins' as *;
+@use '../../../../styles/abstracts/variables' as *;
+@use '../../../../styles/abstracts/mixins' as *;
 
-$imgPath: '../../../assets/images/main';
+$imgPath: '../../../../assets/images/main';
 
 .categoryMenu {
   position: relative;

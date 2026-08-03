@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
 
-import banner01 from '../../../assets/images/main/main_banner01.png'
-import banner02 from '../../../assets/images/main/main_banner02.png'
-import banner03 from '../../../assets/images/main/main_banner03.png'
+import banner01 from '../../../../assets/images/main/main_banner01.png'
+import banner02 from '../../../../assets/images/main/main_banner02.png'
+import banner03 from '../../../../assets/images/main/main_banner03.png'
 
 import 'swiper/css'
 import 'swiper/css/navigation'

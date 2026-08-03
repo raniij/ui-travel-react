@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import banner01 from '../../../assets/images/main/ticket_banner01.png'
-import banner02 from '../../../assets/images/main/ticket_banner02.png'
+import banner01 from '../../../../assets/images/main/ticket_banner01.png'
+import banner02 from '../../../../assets/images/main/ticket_banner02.png'
 
 import 'swiper/css'
 import './UserTicket.scss'
