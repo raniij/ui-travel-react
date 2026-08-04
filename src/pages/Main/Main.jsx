@@ -3,7 +3,7 @@ import CategoryMenu from './components/CategoryMenu/CategoryMenu'
 import MainBanner from './components/MainBanner/MainBanner'
 import UserTicket from './components/UserTicket/UserTicket'
 import SpecialPrice from './components/SpecialPrice/SpecialPrice'
-import SubCategory from './components/SubCategory/SubCategory'
+import StrategyMenu from './components/StrategyMenu/StrategyMenu'
 import SesesePromotion from './components/SesesePromotion/SesesePromotion'
 import AdBanner from './components/AdBanner/AdBanner'
 import TravelDiscovery from './components/TravelDiscovery/TravelDiscovery'
@@ -22,7 +22,7 @@ const Main = () => {
         {/* 메인배너 :: mainBanner */}
         {/* 예매티켓 & 배너 :: userTicket */}
         {/* 투어특가 :: specialPrice */}
-        {/* 전략메뉴 :: subCategory */}
+        {/* 전략메뉴 :: strategyMenu */}
         {/* 쎼쎼쎼 할인특가 :: sesesePromotion */}
         {/* 광고배너 :: adBanner */}
         {/* 여행의 발견 :: travelDiscovery */}
@@ -34,7 +34,7 @@ const Main = () => {
         <MainBanner />
         <UserTicket />
         <SpecialPrice />
-        <SubCategory />
+        <StrategyMenu />
         <SesesePromotion />
         <AdBanner />
         <TravelDiscovery />

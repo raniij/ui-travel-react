@@ -133,5 +133,11 @@ $imgPath: '../../../../assets/images/main';
 @media (min-width: $minDesktop) {
   .categoryMenu {
     display: none;
+
+    &.fixed {
+      ~ .mainBanner {
+        margin-top: 0;
+      }
+    }
   }
 }
