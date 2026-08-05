@@ -23,9 +23,9 @@ const Main = () => {
         {/* 예매티켓 & 배너 :: userTicket */}
         {/* 투어특가 :: specialPrice */}
         {/* 전략메뉴 :: strategyMenu */}
+        {/* 인기 여행지 :: popularTravel */}
         {/* 쎼쎼쎼 할인특가 :: sesesePromotion */}
         {/* 광고배너 :: adBanner */}
-        {/* 인기 여행지 :: popularTravel */}
         {/* 여행 LIVE :: travelLive */}
         {/* 유용한 정보 :: usefulInfo */}
         {/* 공지사항 :: notice */}
@@ -35,9 +35,9 @@ const Main = () => {
         <UserTicket />
         <SpecialPrice />
         <StrategyMenu />
+        <PopularTravel />
         <SesesePromotion />
         <AdBanner />
-        <PopularTravel />
         <TravelLive />
         <UsefulInfo />
         <Notice />
