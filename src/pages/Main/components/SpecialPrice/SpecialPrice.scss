@@ -53,6 +53,7 @@ $imgPath: '../../../../assets/images/main';
     .itemImage {
       overflow: hidden;
       height: 13.8rem;
+      background-color: #eee;
 
       img {
         @include imageCover;

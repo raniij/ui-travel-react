@@ -25,7 +25,7 @@ const Main = () => {
         {/* 투어특가 :: specialPrice */}
         {/* 전략메뉴 :: strategyMenu */}
         {/* 인기 여행지 :: popularTravel */}
-        {/* 쎼쎼쎼 할인특가 :: sesesePromotion */}
+        {/* 쎄쎄쎄 할인특가 :: sesesePromotion */}
         {/* 광고배너 :: adBanner */}
         {/* 여행의 발견 :: travelDiscovery */}
         {/* 여행 LIVE :: travelLive */}

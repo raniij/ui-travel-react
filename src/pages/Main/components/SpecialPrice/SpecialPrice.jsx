@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
-import { specialPriceTabs } from './specialPriceData'
+import { specialPriceTabs } from './SpecialPriceData'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
