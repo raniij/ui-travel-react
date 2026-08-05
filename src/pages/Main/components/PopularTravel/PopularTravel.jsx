@@ -24,7 +24,9 @@ const popularTravels = [
 const PopularTravel = () => {
   return (
     <section className="popularTravel">
-      <h2 className="sectionTitle">인기 여행지</h2>
+      <div className="sectionTitleWrap">
+        <h2 className="sectionTitle">인기 여행지</h2>
+      </div>
 
       <ul className="popularTravelList">
         {popularTravels.map(({ name, image, isMore }) => (

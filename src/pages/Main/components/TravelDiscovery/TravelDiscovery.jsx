@@ -1,5 +1,5 @@
 
-import './TravelDiscovery.scss'
+// import './TravelDiscovery.scss'
 
 const TravelDiscovery = () => {
   return (

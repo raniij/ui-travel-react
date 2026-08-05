@@ -23,7 +23,9 @@ const SpecialPrice = () => {
 
   return (
     <section className="specialPrice">
-      <h2 className="sectionTitle">투어특가</h2>
+      <div className="sectionTitleWrap">
+        <h2 className="sectionTitle">투어특가</h2>
+      </div>
 
       <div className="tab" role="tablist">
         <Swiper

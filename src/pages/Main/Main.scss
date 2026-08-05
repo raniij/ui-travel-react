@@ -10,11 +10,21 @@ $imgPath: '../../assets/images/main';
   }
 
   .sectionTitle {
-    margin-bottom: 1.6rem;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
     line-height: 1.5;
+    
+    &Wrap {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  .sectionDesc {
+    color: #999;
+    font-size: 1.3rme;
+    font-weight: 400;
+    text-align: center;
   }
 
   .swiperBtn {
@@ -68,8 +78,11 @@ $imgPath: '../../assets/images/main';
     }
 
     .sectionTitle {
-      margin-bottom: 2rem;
       font-size: 2.8rem;
+
+      &Wrap {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
