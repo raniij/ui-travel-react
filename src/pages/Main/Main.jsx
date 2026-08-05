@@ -4,9 +4,10 @@ import MainBanner from './components/MainBanner/MainBanner'
 import UserTicket from './components/UserTicket/UserTicket'
 import SpecialPrice from './components/SpecialPrice/SpecialPrice'
 import StrategyMenu from './components/StrategyMenu/StrategyMenu'
+import PopularTravel from './components/PopularTravel/PopularTravel'
 import SesesePromotion from './components/SesesePromotion/SesesePromotion'
 import AdBanner from './components/AdBanner/AdBanner'
-import PopularTravel from './components/PopularTravel/PopularTravel'
+import TravelDiscovery from './components/TravelDiscovery/TravelDiscovery'
 import TravelLive from './components/TravelLive/TravelLive'
 import UsefulInfo from './components/UsefulInfo/UsefulInfo'
 import Notice from './components/Notice/Notice'
@@ -26,6 +27,7 @@ const Main = () => {
         {/* 인기 여행지 :: popularTravel */}
         {/* 쎼쎼쎼 할인특가 :: sesesePromotion */}
         {/* 광고배너 :: adBanner */}
+        {/* 여행의 발견 :: travelDiscovery */}
         {/* 여행 LIVE :: travelLive */}
         {/* 유용한 정보 :: usefulInfo */}
         {/* 공지사항 :: notice */}
@@ -38,6 +40,7 @@ const Main = () => {
         <PopularTravel />
         <SesesePromotion />
         <AdBanner />
+        <TravelDiscovery />
         <TravelLive />
         <UsefulInfo />
         <Notice />
