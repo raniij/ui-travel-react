@@ -5,6 +5,7 @@ $imgPath: '../../../../assets/images/main';
 
 .categoryMenu {
   position: relative;
+  min-width: $minWidth;
   background-color: $white;
   box-shadow: 0 .2rem .4rem rgba($black, .06);
 

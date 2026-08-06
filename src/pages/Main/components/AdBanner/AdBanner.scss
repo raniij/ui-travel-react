@@ -1,0 +1,63 @@
+@use '../../../../styles/abstracts/variables' as *;
+@use '../../../../styles/abstracts/mixins' as *;
+
+$imgPath: '../../../../assets/images/main';
+
+// Mobile & Tablet
+.adBanner {
+  .swiper {
+    &-slide {
+      img {
+        @include imageCover;
+      }
+    }
+
+    &-pagination {
+      width: auto;
+      right: 1rem;
+      left: auto;
+      height: 2.4rem;
+      padding: 0 .8rem;
+      background-color: rgba($black, .7);
+      border-radius: 4rem;
+      color: #999;
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+
+      &-current {
+        color: $white;
+      }
+    }
+  }
+
+  .adBannerSwiperBtn {
+    display: none;
+  }
+}
+
+// PC
+@media (min-width: $minDesktop) {
+  .adBanner {
+    padding-bottom: 9rem;
+
+    .swiper {
+      &-slide {
+        overflow: hidden;
+        border: .1rem solid rgba($black, .08);
+        border-radius: 1.2rem;
+      }
+
+      &-pagination {
+        display: none;
+      }
+    }
+
+    .banner {
+      position: relative;
+    }
+
+    .adBannerSwiperBtn {
+      display: block;
+    }
+  }
+}
