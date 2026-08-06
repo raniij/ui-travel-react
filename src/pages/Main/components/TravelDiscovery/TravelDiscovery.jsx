@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 
-import bannerImage from '../../../../assets/images/main/travelDiscovery01.jpg'
+import thumbImage from '../../../../assets/images/main/travelDiscovery01.jpg'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -11,29 +11,29 @@ import './TravelDiscovery.scss'
 const travelDiscoverys = [
   {
     id: 1,
-    image: bannerImage,
+    image: thumbImage,
     title: "타이베이로 떠나야 할\n다섯가지 이유"
   },
   {
     id: 2,
-    image: bannerImage,
+    image: thumbImage,
     title: "7월에 꼭 가야 할\n당일치기 근교여행지",
     isDarkText: true
   },
   {
     id: 3,
-    image: bannerImage,
+    image: thumbImage,
     title: "2026 일본 여행 기념품,\n전 000은 꼭 사와요!"
   },
   {
     id: 4,
-    image: bannerImage,
+    image: thumbImage,
     title: "8월에 꼭 가야 할\n당일치기 근교여행지",
     isDarkText: true
   },
   {
     id: 5,
-    image: bannerImage,
+    image: thumbImage,
     title: "9월에 꼭 가야 할\n당일치기 근교여행지"
   }
 ]
@@ -45,7 +45,7 @@ const TravelDiscovery = () => {
         <h2 className="sectionTitle">여행의 발견</h2>
       </div>
 
-      <div className="banner">
+      <div className="travelDiscoveryList">
         <Swiper
           modules={[Navigation]}
           navigation={{
