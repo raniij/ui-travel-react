@@ -39,19 +39,52 @@ const CategoryMenu = () => {
   useEffect(() => {
     if (!categoryRef.current) return
 
-    const categoryBottom =
-      categoryRef.current.offsetTop + categoryRef.current.offsetHeight
+    let categoryBottom = 0;
+
+    const updateCategoryBottom = () => {
+      if (!categoryRef.current) return
+
+      categoryBottom =
+        categoryRef.current.offsetTop + 
+        categoryRef.current.offsetHeight
+    }    
 
     const handleScroll = () => {
-      setIsFixed(window.scrollY >= categoryBottom)
+      if (window.innerWidth >= 1025) {
+        setIsFixed(false)
+        return
+      }
+
+      window.scrollY >= categoryBottom 
+        ? setIsFixed(true)
+        : setIsFixed(false)
     }
 
+    const handleResize = () => {
+      setIsFixed(false)
+
+      requestAnimationFrame(() => {
+        updateCategoryBottom()
+        handleScroll()
+      })
+    }
+
+    const init = () => {
+      updateCategoryBottom()
+      handleScroll()
+    }
+    
+    init()
+
     window.addEventListener('scroll', handleScroll)
+    window.addEventListener('resize', handleResize)
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
+
 
   // 스크롤 잠금
   useEffect(() => {   
